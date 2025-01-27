@@ -1,6 +1,6 @@
 <!--
 Author: Joseph Hooser
-Date Modified: 1/22/2025
+Date Modified: 1/27/2025
 -->
 
 <!DOCTYPE html>
@@ -13,18 +13,43 @@ Date Modified: 1/22/2025
     <meta name="keywords" content="Joseph, Pro, Cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
 
 
-        <!--CSS-->
+        <!-------------------------  CSS STYLING  --------------------->
     <style>
+    p {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    h1, h2 {
+      padding: 10px;
+    }
     body {
+      background-color: lightbrown
       margin: 10px;
+      width: 725px;
+    }
+    li {
+    padding-left: 10px;
     }
     </style>
+
+    <!--Create a class to apply to only the picture that we want and no new ones -->
+
+    <style>
+      .image-styler {
+      border: 5px solid blue;
+      border-radius: 15px;
+      position: relative;
+      right: 50%;
+      top: 5%
+      }
+    </style>
     
+    <!------------------ end of styling ----------------------------------------->
   </head>
 
   <body> 
     <header>
-      <img src="images/600_hero_May2024_1of1.webp" alt="bicycle" width="500">
+      <img class="image-styler" img src="images/600_hero_May2024_1of1.webp" alt="bicycle" width="500">
     </header>
     <h1>Joseph's Bicycles!</h1>
     <h2>A Family Oriented Bike shop</h2>

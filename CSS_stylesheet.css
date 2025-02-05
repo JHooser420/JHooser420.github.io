@@ -24,24 +24,25 @@
       top: 5px;
       }
     .container {
-        margin: 0 auto;
-        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
 
     .column {
-        float: left;
-        width: 48%;
+        flex: 1;
+        min-width: 45%;
         padding: 10px;
         box-sizing: border-box;
       }
 
     .img {
         vertical-align: middle;
+        height: auto;
       }
 
     .image-styler2 {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      height: auto;
       }
 
     .image-styler3 {

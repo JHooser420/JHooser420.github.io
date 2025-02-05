@@ -14,16 +14,41 @@
     li {
     padding-left: 10px;
     }
-    </style>
 
     <!--Create a class to apply to only the picture that we want and no new ones -->
-
-    <style>
       .image-styler {
       border: 5px solid blue;
       border-radius: 15px;
       right: 300px;
       top: 5px;
       }
+      .container {
+        margin: 0 auto;
+        width: 800px;
+      }
+
+      .column {
+        float: left;
+        width: 48%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .img {
+        vertical-allign: middle;
+      }
+
+    <!--Create a class to apply to only the picture that we want and no new ones -->
+
+      .image-styler {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      }
+      .image-styler2 {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      }
+
     </style>
     

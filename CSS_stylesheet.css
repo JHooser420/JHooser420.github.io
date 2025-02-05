@@ -37,12 +37,13 @@
       }
 
     .img {
-        vertical-align: middle;
-        min-height: 20%;
+        min-height: 30%;
+        max-height:400px;
       }
 
     .image-styler2 {
-      min-height: 20%;
+      min-height: 30%;
+        max-height:400px;
       }
 
     .image-styler3 {

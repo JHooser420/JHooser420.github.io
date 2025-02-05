@@ -16,32 +16,36 @@
     padding-left: 10px;
     }
 
-      .image-styler {
+    .image-styler {
       border: 5px solid blue;
       border-radius: 15px;
       right: 300px;
       top: 5px;
       }
-      .container {
+    .container {
         margin: 0 auto;
         width: 800px;
       }
 
-      .column {
+    .column {
         float: left;
         width: 48%;
         padding: 10px;
         box-sizing: border-box;
       }
 
-      .img {
+    .img {
         vertical-align: middle;
       }
 
-      .image-styler2 {
+    .image-styler2 {
       padding-top: 50px;
       padding-bottom: 50px;
+      }
 
+    .image-styler3 {
+      padding-top: 100px;
+      padding-bottom: 100px;
       }
 
 

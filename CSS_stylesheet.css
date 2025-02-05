@@ -38,11 +38,11 @@
 
     .img {
         vertical-align: middle;
-        height: auto;
+        min-height: 400px;
       }
 
     .image-styler2 {
-      height: auto;
+      min-height: 400px;
       }
 
     .image-styler3 {

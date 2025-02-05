@@ -38,8 +38,9 @@
 
     .image-styler2 {
         min-height: 10%;
+        max-width:42%
         height:100px;
-        width: 45%;
+        width: 100px;
         padding: 10px;
         
       }

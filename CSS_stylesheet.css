@@ -15,7 +15,6 @@
     padding-left: 10px;
     }
 
-    <!--Create a class to apply to only the picture that we want and no new ones -->
       .image-styler {
       border: 5px solid blue;
       border-radius: 15px;
@@ -37,8 +36,6 @@
       .img {
         vertical-allign: middle;
       }
-
-    <!--Create a class to apply to only the picture that we want and no new ones -->
 
       .image-styler {
       padding-top: 50px;

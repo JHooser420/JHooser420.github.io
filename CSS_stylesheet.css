@@ -8,9 +8,10 @@
       padding: 10px;
     }
     body {
-      background-color: #F3D085;
-      margin: 10px;
-      width: 725px;
+        background-color: #F3D085;
+        margin: 10px;
+        max-width: 1200px;
+        width: 90%
     }
     li {
     padding-left: 10px;
@@ -45,7 +46,7 @@
 
     .image-styler3 {
       padding-top: 100px;
-      padding-bottom: 100px;
+      padding-bottom: 150px;
       }
 
 

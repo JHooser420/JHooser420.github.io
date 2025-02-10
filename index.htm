@@ -34,7 +34,12 @@ Date Modified: 1/27/2025
 
   <!-- SlickNav Activation Script -->
   <script>
-    $(function(){ $('#menu').slicknav(); });
+    $(function(){
+    $('#menu').slicknav({
+        prependTo: 'footer',  // This moves the menu where you want it, if necessary
+        label: '',          // Removes the "Menu" label on mobile
+    });
+});
   </script>
     <header>
       <img class="image-styler" src="images/600_hero_May2024_1of1.webp" alt="bicycle" width="500">

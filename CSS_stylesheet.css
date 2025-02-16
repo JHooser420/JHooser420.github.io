@@ -49,6 +49,25 @@
     margin: 0 auto; /* Centers image if needed */
     object-fit: cover;
 }
+/* Default: Show Regular Navigation */
+#menu {
+  display: block;
+}
+
+/* Hide SlickNav menu by default */
+.slicknav_menu {
+  display: none;
+}
+
+/* When screen is smaller than 768px, hide the default nav and show the SlickNav menu */
+@media screen and (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+}
 
 
     </head>

@@ -12,8 +12,8 @@
         #menu { display: block; }
         .slicknav_menu { display: none; }
 .rollover-image {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: auto;
     border-radius: 15px; /* Ensure corners are rounded */
     background-image: url('images/Bicycle-Logo_2.webp');
     background-size: cover;

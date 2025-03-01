@@ -12,7 +12,7 @@
         #menu { display: block; }
         .slicknav_menu { display: none; }
 .rollover-image {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 15px; /* Ensure corners are rounded */
     background-image: url('images/Bicycle-Logo_2.webp');

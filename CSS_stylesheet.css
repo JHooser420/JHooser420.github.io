@@ -1,95 +1,19 @@
 <head>
 
-    p {
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-    h1, h2 {
-      padding: 10px;
-    }
-    body {
-        background-color: #F3D085;
-        margin: 10px;
-        max-width: 1200px;
-        width: 90%
-    }
-    li {
-    padding-left: 10px;
-    }
-
-    .image-styler {
-      border: 5px solid blue;
-      border-radius: 15px;
-      right: 300px;
-      top: 5px;
-      }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-    .column {
-        flex: 1;
-        min-width: 45%;
-        padding: 10px;
-        box-sizing: border-box;
-      }
-
-.image-styler2 {
-    max-width: 100%; /* Ensures image scales down */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Prevents extra spacing issues */
-    margin: 0 auto; /* Centers image if needed */
-}
-.image-styler3 {
-    max-width: 100%; /* Ensures image scales down */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Prevents extra spacing issues */
-    margin: 0 auto; /* Centers image if needed */
-    object-fit: cover;
-}
-/* Default: Show Regular Navigation */
-#menu {
-  display: block;
-}
-
-/* Hide SlickNav menu by default */
-.slicknav_menu {
-  display: none;
-}
-.rollover-image {
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    border-radius: 10px; /* Rounded corners */
-    background-image: url('images/Bicycle-Logo_2.webp'); /* Your main image */
-    background-size: cover;
-    position: relative; /* Needed for absolute positioning of the hover logo */
-    margin: 20px auto; /* Centers the image, adds some margin */
-}
-
-.rollover-image:hover::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the logo */
-    width: 100px; /* Adjust logo size */
-    height: 100px; /* Adjust logo size */
-    background-image: url('images/600_hero_May2024_1of1.webp'); /* Replace with your hover image */
-    background-size: contain; /* Prevent logo from stretching */
-    background-repeat: no-repeat;
-    z-index: 1; /* Ensure logo is on top */
-}
-/* When screen is smaller than 768px, hide the default nav and show the SlickNav menu */
-@media screen and (max-width: 768px) {
-  #menu {
-    display: none;
-  }
-  .slicknav_menu {
-    display: block;
-  }
-}
-
+        p { padding-left: 5px; padding-right: 5px; }
+        h1, h2 { padding: 10px; }
+        body { background-color: #F3D085; margin: 10px; max-width: 1200px; width: 90%; }
+        li { padding-left: 10px; }
+        .image-styler { border: 5px solid blue; border-radius: 15px; right: 300px; top: 5px; }
+        .container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .column { flex: 1; min-width: 45%; padding: 10px; box-sizing: border-box; }
+        .image-styler2 { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+        .image-styler3 { max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; }
+        #menu { display: block; }
+        .slicknav_menu { display: none; }
+        .rollover-image { width: 200px; height: 200px; border-radius: 10px; background-image: url('images/Bicycle-Logo_2.webp'); background-size: cover; position: relative; margin: 20px auto; }
+        .rollover-image:hover::before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background-image: url('images/600_hero_May2024_1of1.webp'); background-size: contain; background-repeat: no-repeat; z-index: 1; }
+        @media screen and (max-width: 768px) { #menu { display: none; } .slicknav_menu { display: block; } }
+    </style>
 
     </head>

@@ -11,14 +11,20 @@
         .image-styler3 { max-width: 100%; height: auto; display: block; margin: 0 auto; object-fit: cover; }
         #menu { display: block; }
         .slicknav_menu { display: none; }
+
 .rollover-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px; /* Ensure corners are rounded */
+    width: 60%;  /* Makes it stretch across 60% of the screen */
+    max-width: 800px;  /* Prevents it from getting too large on big screens */
+    height: 250px;  /* Slightly larger height for better visibility */
+    border-radius: 15px;  /* Keeps the rounded corners */
     background-image: url('images/Bicycle-Logo_2.webp');
     background-size: cover;
     background-position: center;
-    transition: background-image 0.3s ease-in-out; /* Smooth transition */
+    transition: background-image 0.3s ease-in-out;
+    margin: 20px auto;  /* Centers it horizontally */
+    display: flex;  /* Helps with centering if needed */
+    justify-content: center;
+    align-items: center;
 }
 
 .rollover-image:hover {

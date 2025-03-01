@@ -13,18 +13,15 @@
         .slicknav_menu { display: none; }
 
 .rollover-image {
-    width: 60%;  /* Makes it stretch across 60% of the screen */
-    max-width: 800px;  /* Prevents it from getting too large on big screens */
-    height: 250px;  /* Slightly larger height for better visibility */
-    border-radius: 15px;  /* Keeps the rounded corners */
+    width: 60%; /* Makes it stretch across 60% of the screen */
+    max-width: 800px; /* Prevents it from getting too large on big screens */
+    height: 250px; /* Slightly larger height for better visibility */
+    border-radius: 15px; /* Keeps the rounded corners */
     background-image: url('images/Bicycle-Logo_2.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center; /* Centers the background image */
     transition: background-image 0.3s ease-in-out;
-    margin: 20px auto;  /* Centers it horizontally */
-    display: flex;  /* Helps with centering if needed */
-    justify-content: center;
-    align-items: center;
+    margin: 20px auto; /* Centers it horizontally */
 }
 
 .rollover-image:hover {

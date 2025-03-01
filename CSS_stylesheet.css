@@ -24,6 +24,11 @@
     margin: 20px auto; /* Centers it horizontally */
 }
 
+audio {
+        padding:10px;
+}
+
+
 .rollover-image:hover {
     background-image: url('images/600_hero_May2024_1of1.webp');
 }

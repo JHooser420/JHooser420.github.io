@@ -1,27 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contacts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="CSS_stylesheet.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .reset-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <ul id="menu">
-      <li><a href="index.htm">Home</a></li>
-      <li><a href="rentals.htm">Rentals</a></li>
-      <li><a href="sales.htm">Sales</a></li>
-      <li><a href="services.htm">Service</a></li>
-      <li><a href="contact.htm">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="services.htm">Service</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- SlickNav Activation Script -->
-  <script>
-    $(function(){ $('#menu').slicknav(); });
-  </script>
-    
-    <div class="rollover-image"></div>
+    <!-- SlickNav Activation Script -->
+    <script>
+        $(function(){ $('#menu').slicknav(); });
+    </script>
+
+    <h2 style="text-align: center;">Contact Us</h2>
+
+    <form action="thank_you.html" method="GET" onsubmit="return validateForm()">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="">Select a state</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+        </select>
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" pattern="\d{5}" title="Enter a 5-digit ZIP code" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number" required>
+
+        <label for="creation_date">Creation Date:</label>
+        <input type="date" id="creation_date" name="creation_date" required>
+
+        <label for="message">Message (50-200 characters):</label>
+        <textarea id="message" name="message" rows="4" minlength="50" maxlength="200" required></textarea>
+
+        <fieldset>
+            <legend>Type of Inquiry:</legend>
+            <label><input type="radio" name="inquiry_type" value="General" required> General Inquiry</label>
+            <label><input type="radio" name="inquiry_type" value="Repair" required> Repair</label>
+            <label><input type="radio" name="inquiry_type" value="Customization" required> Customization</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Type of Item:</legend>
+            <label><input type="radio" name="item_type" value="Watch" required> Watch</label>
+            <label><input type="radio" name="item_type" value="Bike" required> Bike</label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Send</button>
+        <button type="reset" class="reset-btn">Reset</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let message = document.getElementById('message').value;
+            if (message.length < 50 || message.length > 200) {
+                alert("Message must be between 50 and 200 characters.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
